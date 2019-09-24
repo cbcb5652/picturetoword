@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>结果页面</title>
+</head>
+<body>
+    <h1>Extracted COntent:</h1>
+    <h2><span th:text="${text}"></span></h2>
+
+    <p>From the image</p>
+    <img th:src="/"+${file.getOriginalFilename()}>
+</body>
+</html>
